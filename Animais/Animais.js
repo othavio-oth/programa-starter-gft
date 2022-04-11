@@ -33,6 +33,10 @@ class Mamiferos extends Animais{
 
 class Aves extends Animais{
 
+    constructor(genero, ordem){
+        super(genero,"Mamallia",ordem,"aquático e terrestre")
+       
+    }
     locomoverSe(){
        super.locomoverSe("asas ou patas, então posso voar")
     }
@@ -48,12 +52,3 @@ class Peixes extends Animais{
 
 var vc = new Mamiferos('masculino',)
 console.log(vc)
-// class Aves extends Animais{
-    
-// }
-// class Peixes extends Animais{
-    
-// }
-
-// var oi = new Mamiferos();
-// oi.locomoverSe();
