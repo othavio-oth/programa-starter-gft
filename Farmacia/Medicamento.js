@@ -1,10 +1,9 @@
 class Medicamento{
-    constructor( nomeMedicamento,
-    valorMedicamento){
+    constructor( nomeMedicamento, valorMedicamento){
             this.nomeMedicamento = nomeMedicamento;
             this.valorMedicamento = valorMedicamento
     }
-    variavelDeDesconto=0;
+    variavelDeDesconto=1;
 
 
     apresentarValorMedicamento(idade){
@@ -21,3 +20,6 @@ class Medicamento{
         console.log("O medicamento custou " +valorTotal+ " reais")
     }
 }
+
+var dipirona = new Medicamento("dipirona", 10)
+dipirona.apresentarValorMedicamento(20)
